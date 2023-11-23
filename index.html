@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+      <p id="score">Score : 0</p>
+      <p id="highscore">Highscore: 0</p>
+      <p id="gems">gems:</p>
+
+    <button type="button" class="mainButton" id="buttonShop">SHOP</button>
+
+    <div class="menu-wrapper">
+      <div id="box">
+        <button type="button" class="charButtons" id="buyChar1">Unlocks on 10 gems</button>
+        <img src="img/char1.png">
+      </div>
+      <div id="box">
+        <button type="button" class="charButtons" id="buyChar2">Unlocks on 100 gems</button>
+        <img src="img/char2.png">
+      </div>
+      <div id="box">
+        <button type="button" class="charButtons" id="buyChar3">Unlocks on 500 gems</button>
+        <img src="img/char3.png">
+      </div>
+      <div id="box">
+        <button type="button" class="charButtons" id="buyChar4">Unlocks on 1000 gems</button>
+        <img src="img/char4.png">
+      </div>
+    </div>
+
+    <div class="gameover" id="gameover">
+      <p class="textGO">Game Over</p>
+      <button type="button" class="playAgain" id="playAgain">PLAY AGAIN</button>
+    </div>
+    <canvas id="game"></canvas>
+
+    <script src="js/js.cookie.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
